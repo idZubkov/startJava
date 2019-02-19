@@ -16,7 +16,7 @@ public class Variable {
 		short gpuMemory = 6000;							//+
 		long memoryHdd = 1000000000L;					//+
 		long memorySsd = 240000000L;					//+
-		boolean moreMemory = memoryHdd > memorySsd;		//+
+		boolean isMoreMemory = memoryHdd > memorySsd;		//+
 
 		System.out.println("\n"+cpuStock+G+H+z+"\n"+cpuTurboBoost+G+H+z+"\n"+cpuOverclock+G+H+z+"\n"+cpuCores+"\n"+cpuThreads+"\n"+ram+M+b+"\n"+
 			gpuModel+M+b+"\n"+gpuMemory+M+b+"\n"+memoryHdd+K+b+"\n"+memorySsd+K+b+"\n"+moreMemory);
