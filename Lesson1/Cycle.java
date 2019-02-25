@@ -9,7 +9,7 @@ public class Cycle {
       System.out.println(i);
       i -= 2;
     }
-
+    
     int x = 10;
     int result = 0;
     do {
