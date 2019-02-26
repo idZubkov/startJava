@@ -1,11 +1,11 @@
 public class Calculator {
-  public static void main(String[] args) {
-    int value1 = 5;
-    int value2 = 3;
-    char sign = 0;
+    public static void main(String[] args) {
+        int value1 = 5;
+        int value2 = 3;
+        char sign = '^';
 
-    if (sign == '+') {
-        System.out.println(value1 + value2);
+        if (sign == '+') {
+            System.out.println(value1 + value2);
         } else if (sign == '-') {
             System.out.println(value1 - value2);
         } else if (sign == '*') {
@@ -13,8 +13,11 @@ public class Calculator {
         } else if (sign == '/') {
             System.out.println(value1 / value2);
         } else if (sign == '^') {
-            int power = 0;
-            System.out.println(value1 * power);
+            int power = 1;
+            for (int i = 0; i < value2; i++) {
+                power = power * value1;
+            }
+            System.out.println(power);
         } else if (sign == '%') {
             System.out.println(value1 % value2);
         }
