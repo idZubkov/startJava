@@ -15,7 +15,7 @@ public class Calculator {
         } else if (sign == '^') {
             int power = 1;
             for (int i = 0; i < value2; i++) {
-                power = power * value1;
+                power *= value1;
             }
             System.out.println(power);
         } else if (sign == '%') {

@@ -14,7 +14,7 @@ public class Variable {
         long memorySsd = 240000000L;
         boolean isMoreMemory = memoryHdd > memorySsd;
 
-        System.out.println("\n" +cpu + K + "\n" + cpuStock + "GHz" + "\n" + cpuTurboBoost + "GHz" + "\n" + cpuOverclock + "GHz" + "\n" + cpuCores + " Cores" + "\n" + cpuThreads + " Threads" + "\n" + ram + "Mb" + "\n" +
+        System.out.println("\n" + cpu + K + "\n" + cpuStock + "GHz" + "\n" + cpuTurboBoost + "GHz" + "\n" + cpuOverclock + "GHz" + "\n" + cpuCores + " Cores" + "\n" + cpuThreads + " Threads" + "\n" + ram + "Mb" + "\n" +
             gpuModel + "Mb" + "\n" + gpuMemory + "Mb" + "\n" + memoryHdd + "Kb" + "\n" + memorySsd + "Kb" + "\n" + isMoreMemory);
     }
 }

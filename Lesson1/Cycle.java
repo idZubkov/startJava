@@ -17,7 +17,7 @@ public class Cycle {
                 result += x;        
             }
             x++;
-        }   while (x < 21);
+        } while (x < 21);
         System.out.println(result);   
-}
+    }
 }

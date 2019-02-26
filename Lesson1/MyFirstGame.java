@@ -15,6 +15,7 @@ public class MyFirstGame {
                     userValue++;
                 }
             }
-        }System.out.println("Вы угадали!");
+        }
+        System.out.println("Вы угадали!");
     }
 }
