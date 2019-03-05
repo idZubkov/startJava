@@ -1,13 +1,13 @@
-public class WolfTest extends Wolf {
+public class WolfTest {
     public static void main(String[] args) {
         Wolf wolf = new Wolf();
-        sex = "male";
-        name = "Oskar";
-        weight = 21;
-        age = 5;
-        colour = "Grey";
+        wolf.setSex("male");
+        wolf.setName("Oskar");
+        wolf.setWeight(21);
+        wolf.setAge(5);
+        wolf.setColour("Grey");
 
-        System.out.println(name + " " + sex + " " + weight + " " + age + " " + colour);
+        System.out.println(wolf.getName() + wolf.getSex() + " " + wolf.getWeight() + " " + wolf.getAge() + " " + wolf.getColour());
 
         wolf.move();
         wolf.sit();

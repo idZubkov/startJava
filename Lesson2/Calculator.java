@@ -15,7 +15,7 @@ public class Calculator {
         this.sign = sign;
     }
 
-    public void calculation() {
+    public void calculate() {
         switch (sign) {
             case '+':
                 System.out.println(value1 + value2);
@@ -40,5 +40,6 @@ public class Calculator {
                 System.out.println(value1 % value2);
                 break;
         }
+
     }
 }
