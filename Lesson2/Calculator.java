@@ -40,6 +40,5 @@ public class Calculator {
                 System.out.println(value1 % value2);
                 break;
         }
-
     }
 }
