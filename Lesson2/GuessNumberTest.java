@@ -1,13 +1,23 @@
+import java.util.Scanner;
+
 public class GuessNumberTest {
     public static void main(String[] args) {
-        Player player1 = new Player();
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Введите имя первого игрока: ");
-        player1.setName();
-        Player player2 = new Player();
+        Player player1 = new Player(scanner.nextLine());
+
         System.out.println("Введите имя второго игрока: ");
-        player2.setName();
+        Player player2 = new Player(scanner.nextLine());
+
         GuessNumber guessNumber = new GuessNumber();
         System.out.println("Игра началась!");
+        System.out.println("Игрок 1 делает ход" );
+        player1.setNumber(scanner.nextInt());
+        guessNumber.play();
+
+        System.out.println("Игрок 2 делает ход");
+        player2.setNumber(scanner.nextInt());
         guessNumber.play();
     }
 }
