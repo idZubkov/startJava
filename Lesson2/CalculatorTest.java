@@ -5,8 +5,8 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Хотите продолжить? [да/нет]: ");
-        while (scanner.nextLine().equals("Да")) {
+        String word;
+        do {
             System.out.println("Введите первое число: ");
             calculator.setValue1(scanner.nextInt());
 
@@ -17,12 +17,12 @@ public class CalculatorTest {
             calculator.setValue2(scanner.nextInt());
 
             calculator.calculate();
+            word = scanner.nextLine();
 
-            System.out.println("Хотите продолжить? [да/нет]: ");
-
-            while (scanner.nextLine().equals("Да") && scanner.nextLine().equals("Нет")) {
+            while (!(word.equals("Да") && word.equals("Нет"))) {
                 System.out.println("Хотите продолжить? [да/нет]: ");
+                word = scanner.nextLine();
             }
-        }
+        } while (word.equals("Да"));
     }
 }
