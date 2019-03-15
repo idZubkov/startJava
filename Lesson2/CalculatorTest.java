@@ -1,9 +1,7 @@
 import java.util.Scanner;
-
 public class CalculatorTest {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-
         Scanner scanner = new Scanner(System.in);
         String word;
         do {
@@ -17,12 +15,10 @@ public class CalculatorTest {
             calculator.setValue2(scanner.nextInt());
 
             calculator.calculate();
-            word = scanner.nextLine();
-
-            while (!(word.equals("Да") && word.equals("Нет"))) {
+            do {
                 System.out.println("Хотите продолжить? [да/нет]: ");
                 word = scanner.nextLine();
-            }
+            } while (!(word.equals("Да") || word.equals("Нет")));
         } while (word.equals("Да"));
     }
 }
