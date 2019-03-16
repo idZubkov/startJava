@@ -15,6 +15,7 @@ public class CalculatorTest {
             calculator.setValue2(scanner.nextInt());
 
             calculator.calculate();
+            scanner.nextLine();
             do {
                 System.out.println("Хотите продолжить? [да/нет]: ");
                 word = scanner.nextLine();
