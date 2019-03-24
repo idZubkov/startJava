@@ -12,14 +12,14 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    public void play() {
-        while (player1.getNumber() != compValue || player2.getNumber() != compValue) {
-
-            player1.setNumber(scanner.nextInt());
-            if (player1.getNumber() > compValue) {
+    public void play(Player player) {
+        while (player.getNumber() != compValue) {
+            System.out.println(player.getName() + " делает ход");
+            player.setNumber(scanner.nextInt());
+            if (player.getNumber() > compValue) {
                 System.out.println("Введенное вами число больше того, что загадал компьютер");
                 break;
-            } else if (player1.getNumber() < compValue) {
+            } else if (player.getNumber() < compValue) {
                 System.out.println("Введенное вами число меньше того, что загадал компьютер");
                 break;
             } else {

@@ -12,11 +12,9 @@ public class GuessNumberTest {
             Player player2 = new Player(scanner.nextLine());
 
             GuessNumber guessNumber = new GuessNumber(player1, player2);
-            System.out.println("Игра началась!\nИгрок 1 делает ход");
-            guessNumber.play();
-            
-            System.out.println("Игрок 2 делает ход");
-            guessNumber.play();
+            System.out.println("Игра началась!");
+            guessNumber.play(player1);
+            guessNumber.play(player2);
             do {
                 System.out.println("Хотите продолжить? [да/нет]: ");
                 word = scanner.nextLine();
