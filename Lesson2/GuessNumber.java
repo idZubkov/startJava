@@ -12,7 +12,12 @@ public class GuessNumber {
         this.player2 = player2;
     }
 
-    public void play(Player player) {
+    public void play() {
+        startGame(player1);
+        startGame(player2);
+    }
+
+    public void startGame(Player player) {
         while (player.getNumber() != compValue) {
             System.out.println(player.getName() + " делает ход");
             player.setNumber(scanner.nextInt());

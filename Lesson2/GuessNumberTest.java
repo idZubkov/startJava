@@ -13,8 +13,7 @@ public class GuessNumberTest {
 
             GuessNumber guessNumber = new GuessNumber(player1, player2);
             System.out.println("Игра началась!");
-            guessNumber.play(player1);
-            guessNumber.play(player2);
+            guessNumber.play();
             do {
                 System.out.println("Хотите продолжить? [да/нет]: ");
                 word = scanner.nextLine();
