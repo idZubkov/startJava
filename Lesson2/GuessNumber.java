@@ -13,8 +13,16 @@ public class GuessNumber {
     }
 
     public void play() {
-        startGame(player1);
-        startGame(player2);
+        while (player1.getNumber() != compValue || player2.getNumber() != compValue) {
+            startGame(player1);
+            if (player1.getNumber() == compValue) {
+                break;
+            }
+            startGame(player2);
+            if (player2.getNumber() == compValue) {
+                break;
+            }
+        }
     }
 
     public void startGame(Player player) {
