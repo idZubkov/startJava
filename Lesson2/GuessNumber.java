@@ -13,7 +13,7 @@ public class GuessNumber {
     }
 
     public void play() {
-        while (player1.getNumber() != compValue || player2.getNumber() != compValue) {
+        while (true) {
             startGame(player1);
             if (player1.getNumber() == compValue) {
                 break;
@@ -26,19 +26,15 @@ public class GuessNumber {
     }
 
     public void startGame(Player player) {
-        while (player.getNumber() != compValue) {
-            System.out.println(player.getName() + " делает ход");
-            player.setNumber(scanner.nextInt());
-            if (player.getNumber() > compValue) {
-                System.out.println("Введенное вами число больше того, что загадал компьютер");
-                break;
-            } else if (player.getNumber() < compValue) {
-                System.out.println("Введенное вами число меньше того, что загадал компьютер");
-                break;
-            } else {
-                System.out.println("Вы угадали!");
-                break;
-            }
+        System.out.println(player.getName() + " делает ход");
+        player.setNumber(scanner.nextInt());
+        if (player.getNumber() > compValue) {
+            System.out.println("Введенное вами число больше того, что загадал компьютер");
+        } else if (player.getNumber() < compValue) {
+            System.out.println("Введенное вами число меньше того, что загадал компьютер");
+        } else {
+            System.out.println("Вы угадали!");
+
         }
     }
 }
