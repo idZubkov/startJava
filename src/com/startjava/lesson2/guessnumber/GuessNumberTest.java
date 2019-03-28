@@ -1,3 +1,5 @@
+package com.startjava.lesson2.guessnumber;
+
 import java.util.Scanner;
 
 public class GuessNumberTest {
@@ -12,7 +14,7 @@ public class GuessNumberTest {
             Player player2 = new Player(scanner.nextLine());
 
             GuessNumber guessNumber = new GuessNumber(player1, player2);
-            System.out.println("Игра началась!");
+            System.out.println("The game has begun!");
             guessNumber.play();
             do {
                 System.out.println("Хотите продолжить? [да/нет]: ");

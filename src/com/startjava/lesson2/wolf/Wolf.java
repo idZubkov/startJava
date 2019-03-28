@@ -1,3 +1,5 @@
+package com.startjava.lesson2.wolf;
+
 public class Wolf {
     private String sex;
     private String name;
@@ -6,7 +8,7 @@ public class Wolf {
     private String colour;
 
     public void move() {
-        System.out.println("Идёт");
+        System.out.println("Go");
     }
 
     public void sit() {

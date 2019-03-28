@@ -1,3 +1,5 @@
+package com.startjava.lesson2.robot;
+
 public class Jaeger {
     private String modelName;
     private String mark;
@@ -11,7 +13,7 @@ public class Jaeger {
     private int kaijuKilled;
 
     public void move() {
-        System.out.println("Идёт");
+        System.out.println("Go");
     }
 
     public void fight() {
@@ -29,7 +31,7 @@ public class Jaeger {
     }
 
     public void useVortexCannon() {
-        System.out.println("Использует вихревую пушку");
+        System.out.println("Use вихревую пушку");
     }
 
     public void setModelName(String modelName) {
