@@ -1,23 +1,17 @@
-package com.startjava.lesson2.calculator;
+package com.startjava.lesson_2_3.calculator;
 
 import java.util.Scanner;
+
 public class CalculatorTest {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
         String word;
+        String input;
         do {
-            System.out.println("Введите первое число: ");
-            calculator.setValue1(scanner.nextInt());
-
-            System.out.println("Введите знак математической операции: ");
-            calculator.setSign(scanner.next().charAt(0));
-
-            System.out.println("Введите второе число: ");
-            calculator.setValue2(scanner.nextInt());
-
-            calculator.calculate();
-            scanner.nextLine();
+            System.out.println("Введите математическое выражение: ");
+            input = scanner.nextLine();
+            calculator.calculate(input);
             do {
                 System.out.println("Хотите продолжить? [да/нет]: ");
                 word = scanner.nextLine();

@@ -1,2 +1,4 @@
 # folder byte code
-out/
+out
+.idea/*
+*.iml
